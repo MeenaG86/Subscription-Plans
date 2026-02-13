@@ -1,0 +1,41 @@
+*{margin: 0;
+padding:0;
+}
+body{
+    font-family:Poppins,sans-serif;
+}
+.header{
+    background-color:palevioletred;
+    text-align: center;
+    width:50%;
+    margin-left: 320px;
+    margin-top: 50px;
+    padding: 5px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    margin-top: 20px;
+
+
+}
+.sub-box{
+
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    width:125px;
+
+}
+.sub-box h3{
+    text-align: center;
+}
+.sub-box__desc{
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
