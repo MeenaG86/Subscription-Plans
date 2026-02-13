@@ -7,7 +7,7 @@ body{
 .header{
     background-color:palevioletred;
     text-align: center;
-    width:60%;
+    width:50%;
     margin-left: 320px;
     margin-top: 50px;
     padding: 5px;
@@ -40,3 +40,4 @@ body{
     font-weight: bold;
 
 }
+
