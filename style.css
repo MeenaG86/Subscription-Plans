@@ -1,5 +1,6 @@
 *{margin: 0;
 padding:0;
+box-sizing: border-box; /* Makes sizing easier and predictable */
 }
 body{
     font-family:Poppins,sans-serif;
@@ -8,15 +9,24 @@ body{
     background-color:palevioletred;
     text-align: center;
     width:50%;
-    margin-left: 320px;
+    /*we use auto to properly center the element */
+    margin: 50px auto 0;
+
+    padding: 10px;
+   /* margin-left: 320px;
     margin-top: 50px;
-    padding: 5px;
+    padding: 5px;*/
 }
 .container{
     display: flex;
     justify-content: center;
-    gap:50px;
-    margin-top: 20px;
+    gap:40px;
+    margin-top: 30px;
+      /* IMPORTANT:
+       Allows items to move to next row
+       when there is no enough space */
+    flex-wrap: wrap;
+    
 
 
 }
@@ -25,19 +35,27 @@ body{
     background-color: black;
     color: white;
     padding: 20px;
-    border-radius: 30px;
-    width:125px;
+    border-radius: 20px;
+    /*width:125px;*/
+    /*flex-basis acts like a base width */
+    flex-basis: 170px;
+    /* Allows card to grow if extra space is available */
+   /* flex-grow: 1;*/
+
+    /* Prevents it from becoming too large */
+    max-width: 350px;
+    /*flex-wrap: wrap;
+    flex-basis: 120px;*/
 
 }
 .sub-box h3{
     text-align: center;
+    margin-bottom: 15px;
 }
 .sub-box__desc{
     border: solid white 1px;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     font-size: 10px;
     font-weight: bold;
-
 }
-
